@@ -25,7 +25,7 @@ public class SuiteListener implements ITestListener, IAnnotationTransformer {
         String fileName = System.getProperty("user.dir") + File.separator + "screenshot" + File.separator + iTestResult.getMethod().getMethodName();
         File f = ((TakesScreenshot) BaseTest.driver).getScreenshotAs(OutputType.FILE);
         try {
-            FileUtils.copyFile(f, new File(fileName +"Success"+ ".png"));
+            FileUtils.copyFile(f, new File(fileName +"-Success"+ ".png"));
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -37,7 +37,7 @@ public class SuiteListener implements ITestListener, IAnnotationTransformer {
         String fileName = System.getProperty("user.dir") + File.separator + "screenshot" + File.separator + iTestResult.getMethod().getMethodName();
         File f = ((TakesScreenshot) BaseTest.driver).getScreenshotAs(OutputType.FILE);
         try {
-            FileUtils.copyFile(f, new File(fileName  +"Fail"+ ".png"));
+            FileUtils.copyFile(f, new File(fileName  +"-Fail"+ ".png"));
         } catch (IOException e) {
             e.printStackTrace();
         }

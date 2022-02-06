@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="sdk_canvas_task" />
+        <module name="sdc" />
       </profile>
     </annotationProcessing>
   </component>

@@ -27,7 +27,7 @@ public class BaseTest {
 
     @BeforeTest
     public void beforeTestMethod(){
-        htmlReporter = new ExtentHtmlReporter(System.getProperty("user.dir") + File.separator + "reports" + File.separator + "AutomationReport.html");
+        htmlReporter = new ExtentHtmlReporter(System.getProperty("user.dir") + File.separator + "reports" + File.separator + "AutomationTestReport.html");
         htmlReporter.config().setEncoding("utf-8");
         htmlReporter.config().setDocumentTitle("Automation Test Report");
         htmlReporter.config().setReportName("Test Results");
