@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testing-1.0.dtd">
+<suite name="Sample Test Suite">
+    <listeners>
+        <listener class-name="main.java.utils.SuiteListener"/>
+    </listeners>
+    <test name="Test Automation">
+        <parameter name="browserName" value="chrome" />
+        <classes>
+            <class name="test.java.VerifyBasePageOpenedOrNot"/>
+            <class name="test.java.VerifyBasePageCanvasExistedOrNot"/>
+            <class name="test.java.VerifyIfNodeCreatedAfterClickingOnButton"/>
+            <class name="test.java.VerifyCurrentNodeDetailsOpenedOrNot"/>
+            <class name="test.java.VerifyIfNodeCreatedAfterDoubleClickOnNode"/>
+            <class name="test.java.VerifyCurrentNodeContextOpenedOrNot"/>
+            <class name="test.java.VerifyAfterClickingContextItemAlertIsOpenedOrNot"/>
+            <class name="test.java.VerifyTwoNodesConnectedLineExistedOrNot"/>
+        </classes>
+    </test>
+</suite>
